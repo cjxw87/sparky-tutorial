@@ -27,7 +27,9 @@ int main(int argc, const char * argv[]) {
     
     vec2 vector(1.0f,2.0f);
     
+    
     mat4 translation=mat4::translation(vec3(0,2,3));
+    vec4 column=translation.columns[3];
     
     while (!window.closed()) {
 //        glClear(GL_COLOR_BUFFER_BIT);
