@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE757E111C97B2F8009AF7FF /* basic.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE183C4C1C96A11700841747 /* basic.vert */; };
 		DE7C404C1C4C81500073AFC4 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7C404B1C4C81500073AFC4 /* libGLEW.a */; };
 		DE8152F41C8980EF0032A792 /* vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE8152EE1C8980EF0032A792 /* vec2.cpp */; };
 		DE8152F51C8980EF0032A792 /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE8152F01C8980EF0032A792 /* vec3.cpp */; };
 		DE8152F61C8980EF0032A792 /* vec4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE8152F21C8980EF0032A792 /* vec4.cpp */; };
 		DE8152F81C89835C0032A792 /* mat4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE8152F71C89835C0032A792 /* mat4.cpp */; };
+		DE9387981C957FDD007A95D8 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE9387971C957FDC007A95D8 /* shader.cpp */; };
 		DE9C81061C4A7B9100251258 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE9C81051C4A7B9100251258 /* main.cpp */; };
 		DE9C810D1C4A7BBB00251258 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9C810C1C4A7BBB00251258 /* OpenGL.framework */; };
 		DE9C810F1C4A7BCC00251258 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9C810E1C4A7BCC00251258 /* libglfw.3.1.dylib */; };
@@ -22,16 +24,20 @@
 		DE9C81001C4A7B9100251258 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				DE757E111C97B2F8009AF7FF /* basic.vert in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE183C4C1C96A11700841747 /* basic.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basic.vert; sourceTree = "<group>"; };
+		DE183C4D1C96A12400841747 /* basic.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basic.frag; sourceTree = "<group>"; };
 		DE489DF31C8BF38F009A51EC /* maths_func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maths_func.h; sourceTree = "<group>"; };
+		DE757E0E1C97ABE4009AF7FF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		DE7C404B1C4C81500073AFC4 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.a; sourceTree = "<group>"; };
 		DE8152ED1C8980EF0032A792 /* maths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maths.h; sourceTree = "<group>"; };
 		DE8152EE1C8980EF0032A792 /* vec2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec2.cpp; sourceTree = "<group>"; };
@@ -41,6 +47,9 @@
 		DE8152F21C8980EF0032A792 /* vec4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec4.cpp; sourceTree = "<group>"; };
 		DE8152F31C8980EF0032A792 /* vec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec4.h; sourceTree = "<group>"; };
 		DE8152F71C89835C0032A792 /* mat4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mat4.cpp; sourceTree = "<group>"; };
+		DE9387941C9537AB007A95D8 /* fileUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fileUtils.hpp; sourceTree = "<group>"; };
+		DE9387961C957B35007A95D8 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		DE9387971C957FDC007A95D8 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		DE9C81021C4A7B9100251258 /* tes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tes; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9C81051C4A7B9100251258 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DE9C810C1C4A7BBB00251258 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -64,11 +73,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE183C4B1C96A0F900841747 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DE183C4C1C96A11700841747 /* basic.vert */,
+				DE183C4D1C96A12400841747 /* basic.frag */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
 		DE8153F21C4FABF900CD126B /* Input */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Input;
+			sourceTree = "<group>";
+		};
+		DE9387921C953774007A95D8 /* Utls */ = {
+			isa = PBXGroup;
+			children = (
+				DE9387941C9537AB007A95D8 /* fileUtils.hpp */,
+				DE757E0E1C97ABE4009AF7FF /* Header.h */,
+			);
+			name = Utls;
 			sourceTree = "<group>";
 		};
 		DE9C80F91C4A7B9100251258 = {
@@ -93,6 +120,8 @@
 		DE9C81041C4A7B9100251258 /* tes */ = {
 			isa = PBXGroup;
 			children = (
+				DE183C4B1C96A0F900841747 /* shaders */,
+				DE9387921C953774007A95D8 /* Utls */,
 				DEE634631C5B3A070091DEBE /* Math */,
 				DE8153F21C4FABF900CD126B /* Input */,
 				DE9C81101C4A7E6D00251258 /* Grapics */,
@@ -106,6 +135,8 @@
 			children = (
 				DE9C81111C4A7ED200251258 /* window.h */,
 				DE9C81121C4A7F1300251258 /* window.cpp */,
+				DE9387961C957B35007A95D8 /* shader.h */,
+				DE9387971C957FDC007A95D8 /* shader.cpp */,
 			);
 			name = Grapics;
 			sourceTree = "<group>";
@@ -185,6 +216,7 @@
 			files = (
 				DE9C81061C4A7B9100251258 /* main.cpp in Sources */,
 				DE9C81131C4A7F1300251258 /* window.cpp in Sources */,
+				DE9387981C957FDD007A95D8 /* shader.cpp in Sources */,
 				DE8152F51C8980EF0032A792 /* vec3.cpp in Sources */,
 				DE8152F61C8980EF0032A792 /* vec4.cpp in Sources */,
 				DE8152F41C8980EF0032A792 /* vec2.cpp in Sources */,
